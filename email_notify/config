@@ -1,0 +1,11 @@
+defaults
+auth           on
+tls            on
+tls_starttls   on
+host           smtp.gmail.com
+port           587
+user           alerts@example.com
+passwordeval   "cat ~/.secrets/gmail_app_password"
+
+account default
+from alerts@example.com
