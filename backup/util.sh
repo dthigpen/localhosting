@@ -49,6 +49,9 @@ csv_to_array() {
     done
 }
 
+expand_home() {
+	echo "${1/#\~/$HOME}"
+}
 expand_home_in_array() {
     local -n arr="$1"
 
